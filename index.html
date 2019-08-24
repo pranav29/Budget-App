@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-11">
+            <h3 class="text-uppercase">Budget App</h3>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="budget-feedback alert alert-danger text-capitalize" id="budget-feedback">budget feedback</div>
+                    <form id="budget-form" class="budget-form">
+                        <h5 class="text-capitalize">please enter your budget</h5>
+                        <div class="form-group">
+                            <input type="number" id="budget-input" class="form-control">
+                        </div>
+                        <button type="submit" id="budget-submit" class="btn text-capitalize">calculate</button>
+                    </form>
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-4">
+                            <h6>Budget</h6>
+                            <span><i class="fas fa-money-bill-alt"></i></span>
+                            <h4><span>$ </span><span id="budget-amount" class="showGreen">0</span></h4>
+                        </div>
+                        <div class="col-4">
+                            <h6>expenses</h6>
+                            <span><i class="far fa-credit-card"></i></span>
+                            <h4><span>$ </span><span id="expense-amount" class="showRed">0</span></h4>
+                        </div>
+                        <div class="col-4">
+                            <h6>balance</h6>
+                            <span><i class="fas fa-dollar-sign"></i></span>
+                            <h4><span>$ </span><span id="balance-amount">0</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="expense-feedback alert alert-danger text-capitalize" id="expense-feedback">expense feedback</div>
+                    <form id="expense-form" class="expense-form">
+                        <h5 class="text-capitalize">please enter your expense</h5>
+                        <div class="form-group">
+                            <input type="text" id="expense-title" class="form-control">
+                        </div>
+                        <h5 class="text-capitalize">please enter expense amount</h5>
+                        <div class="form-group">
+                            <input type="number" id="expense-value" class="form-control">
+                        </div>
+                        <button type="submit" id="expense-submit" class="btn text-capitalize">add expense</button>
+                    </form>
+                </div>
+                <div class="col-md-7">
+                    <div id="expense-list">
+                        <div class="expense-list-header d-flex text-capitalize">
+                            <h5 class="list-item">expense title</h5>
+                            <h5 class="list-item">expense value</h5>
+                            <h5 class="list-item"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>

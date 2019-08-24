@@ -1,0 +1,41 @@
+:root {
+    --mainWhite: #f5f5f5;
+    --mainDark: #333333;
+    --mainGreen: #317b22;
+    --mainRed: #b80c09;
+    --mainBlue: #05668d;
+}
+
+.budget-feedback,
+.expense-feedback {
+    display: none;
+}
+
+.display-feedback {
+    display: block;
+}
+
+.budget-form {
+    border: 0.15em solid var(--mainGreen);
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.expense-form {
+    border: 0.15em solid var(--mainRed);
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.list-item {
+    flex: 0 0 33.33%;
+    text-align: center;
+}
+
+.showGreen {
+    color: var(--mainGreen);
+}
+
+.showRed {
+    color: var(--mainRed);
+}
